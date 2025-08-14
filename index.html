@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <title>Document</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+    <!-- NAVIGACIJA + HEADER ZNOTRAJ WRAPPERJA -->
+    <header>
+        
+        
+    
+        
+        
+        <!-- DESNI MENI -->
+        <div class="nav_bar" id="sidebar">
+
+          <ul class="navlist">
+            <li><a class="nav_link" href="index.html">Domov</a></li>
+            <li><a class="nav_link" href="far_biofar_ind.html">Farmacevtska in biofarmacevtska industrija</a></li>
+            <li><a class="nav_link" href="prehrambena_ind.html">Prehrambena industrija</a></li>
+            <li><a class="nav_link" href="index_SI.html#o-nas">O nas</a></li>
+            <li><a class="nav_link" href="index_SI.html#kontakt_noga">Kontakt</a></li>
+          </ul>
+        
+
+        </div>
+
+        <div class="glava">
+            <div class="logo" id="logo">
+                <a href="index.html"><img src="slike/logo.png" alt="Logo" /></a>
+            </div>
+            <div class="desna_glava">
+                <select class="language-select" onchange="redirectLanguage(this)">
+                  <option value="sl">SI</option>
+                  <option value="en">EN</option>
+                  <option value="de">DE</option>
+                </select>
+            
+                <!-- Ikona menija / križec -->
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+        </div>
+
+
+        
+    </header>
+    <!-- Zatemnitev ozadja -->
+        <div class="overlay" id="overlay"></div>
+    
+    <div id="page-wrapper">
+      <section class="hero">
+        <div class="hero-controls">
+          <button class="hero-btn" data-index="0"></button>
+          <button class="hero-btn" data-index="1"></button>
+          <button class="hero-btn" data-index="2"></button>
+          <button class="hero-btn" data-index="3"></button>
+        </div>
+
+
+
+
+        
+
+
+
+
+
+
+        <div class="hero-slide active prvi-slide"  style="background-image: 
+          linear-gradient(rgb(62, 118, 221), rgba(62, 118, 221, 0.427)),
+          url('slike/slika_glava1.png'),
+          url('slike/skid.png'),
+          linear-gradient(rgba(62, 118, 221), rgba(62, 118, 221, 0.427)),
+          url('slike/slika_glava2.png');
+          background-position:  left center, left center, center center, right center, right center;
+          background-size: 30% 100%, 30% 100%, 40% 100%, 30% 100%, 30% 100%;
+          background-repeat: no-repeat;">
+          <div class="hero-content">
+            <h1 class="kemijska_industrija">inovativne rešitve iz nerjavečegan jekla</h1>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="hero-slide"  style="background-image: url(slike/farmacija.jpg)"">
+          <div class="hero-content">
+            <h1 class="kemijska_industrija">farmacevtska industrija</h1>
+            <p class="kemijska_industrija_opis">Precizna kovinska oprema iz nerjavečega jekla za varne, čiste in zanesljive farmacevtske procese.</p>
+          </div>
+        </div>
+      
+        <div class="hero-slide" style="background-image: url(slike/biofarmacija.jpg)">
+          <div class="hero-content">
+            <h1>biofarmacevtska industrija</h1>
+            <p>Visokokakovostni nerjaveči sistemi za občutljive in zahtevne biofarmacevtske procese.</p>
+          </div>
+        </div>
+      
+        <div class="hero-slide" style="background-image: url(slike/prehrambena_industrija.jpg)">
+          <div class="hero-content">
+            <h1>prehrambena industrija</h1>
+            <p>Higienska kovinska oprema za varno, učinkovito in trajnostno proizvodnjo hrane.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+
+
+    <main>
+      <div class="storitve">
+
+        <div class="Farmacevtska_industrija">
+          <h2>Farmacevtska industrija</h2>
+          <p id="opis_panoge">V farmacevtski industriji je vsak detajl pomemben – od izbire materialov do končne obdelave. Naše kovinarske rešitve iz vrhunskih nerjavečih jekel, zagotavljajo izjemno odpornost proti koroziji, enostavno čiščenje in popolno skladnost z najstrožjimi standardi.</p>
+
+          <div class="gumb">
+            <a href="#">
+              <button><p id="vec_gumb">+</p></button>
+            </a>
+            <a href="#">
+              <p id="vec" class="vec"> Preberi več</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="crta">
+
+        </div>
+
+
+
+        <div class="Kemijska_industrija">
+          <h2>Biofarmacevtska industrija</h2>
+          <p id="opis_panoge">Biofarmacevtska proizvodnja zahteva popolno kontrolirano okolje in materiale, ki ne vplivajo na kakovost občutljivih bioloških produktov. Naši kovinski sistemi so zasnovani za preprečevanje kontaminacije, omogočajo sterilno obdelavo in izpolnjujejo stroge regulativne zahteve.</p>
+          <div class="gumb">
+            <a href="#">
+              <button><p id="vec_gumb">+</p></button>
+            </a>
+            <a href="#">
+              <p id="vec" class="vec"> Preberi več</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="slika_vmes">
+        <div class="kocka"></div>
+        <div class="text"><h1 id="panoge">GOSPODARSKE PANOGE</h1></div>
+        <div class="kocka2"></div>
+      </div>
+
+
+
+
+      <div class="storitve2">
+
+        <div class="Prehrambena_industrija">
+          <h2>Prehrambena industrija</h2>
+          <p id="opis_panoge">V prehrambeni industriji higiena, varnost in zanesljivost niso zgolj zahteve, temveč nuja. Naše kovinske rešitve iz nerjavnega jekla omogočajo učinkovito in varno obdelavo hrane, preprečujejo nabiranje nečistoč ter omogočajo hitro in enostavno čiščenje.</p>
+          <div class="gumb">
+            <a href="#">
+              <button><p id="vec_gumb">+</p></button>
+            </a>
+            <a href="#">
+              <p id="vec" class="vec"> Preberi več</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <section class="storitev-map">
+        <h2 class="storitev-naslov">STORITVE</h2>
+        
+        <div class="storitev-item st1">
+          <span class="storitev-title">Izdelava procesnih sistemov</span>
+          <span class="storitev-toggle">+</span>
+          <div class="storitev-description">
+            <p>Smo strokovnjaki za izdelavo SKID sistemov, posod pod visokim tlakom, platform in podestov ter spremljajoče opreme iz nerjavečega jekla (inox) za farmacevtsko, biofarmacevtsko, kemijsko in živiljsko industrijo</p>
+          </div>
+        </div>
+      
+        <div class="storitev-item st2">
+          <span class="storitev-title">Proizvodnja in montaža</span>
+          <span class="storitev-toggle">+</span>
+          <div class="storitev-description">
+            Izdelava in montaža nerjavnih konstrukcij, procesne opreme in cevovodov v skladu z najvišjimi higienskimi in varnostnimi standardi.
+          </div>
+        </div>
+      
+        <div class="storitev-item st3">
+          <span class="storitev-title">Varjenje TIG</span>
+          <span class="storitev-toggle">+</span>
+          <div class="storitev-description">
+            Precizno TIG varjenje nerjavečega jekla za visokotlačne in sanitarne sisteme, primerno za farmacevtsko in prehrambno industrijo.
+          </div>
+        </div>
+      
+        <div class="storitev-item st4">
+          <span class="storitev-title">Orbitalno varjenje</span>
+          <span class="storitev-toggle">+</span>
+          <div class="storitev-description">
+            Avtomatizirano orbitalno varjenje za popolne, čiste in ponovljive spoje cevovodov brez kontaminacije.
+          </div>
+        </div>
+      
+        <div class="storitev-item st5">
+          <span class="storitev-title">Poliranje in brušenje</span>
+          <span class="storitev-toggle">+</span>
+          <div class="storitev-description">
+            Mehansko in elektropoliranje notranjih in zunanjih površin za dosego optimalne hrapavosti in enostavno čiščenje.
+          </div>
+        </div>
+      
+        <div class="storitev-item st6">
+          <span class="storitev-title">Varjenje cevovodov</span>
+          <span class="storitev-toggle">+</span>
+          <div class="storitev-description">
+            Montaža in varjenje sanitarnih cevovodnih sistemov z zagotovljeno tesnostjo in dolgotrajno odpornostjo proti koroziji.
+          </div>
+        </div>
+      
+        <div class="storitev-item st7">
+          <span class="storitev-title">Vzdrževanje</span>
+          <span class="storitev-toggle">+</span>
+          <div class="storitev-description">
+            Redno in izredno vzdrževanje procesne opreme ter cevovodov za neprekinjeno in varno delovanje proizvodnje.
+          </div>
+        </div>
+      
+        
+      </section>
+
+
+
+
+
+
+
+
+
+      
+
+      
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+      <div class="onas" id="o-nas">
+        <div class="naslov_onas">
+          <h2>O PODJETJU</h2>
+        </div>
+        <div class="onas_text">
+          <div class="text1_onas">
+            <p>Naše podjetje je samostojno in temelji na dolgoletnih izkušnjah, pridobljenih tako na domačem kot mednarodnem trgu. Specializirani smo za izvajanje storitev varjenja, montažnih del ter različnih mehanskih in obdelovalnih procesov.</p>
+            <p>Naša strokovnost in predanost delu nas uvrščata med zanesljive partnerje zlasti v zahtevnih industrijskih panogah, kot so farmacevtska, prehrambena in kemična industrija. Skozi leta smo razvili edinstven pristop, kjer varjenje ne predstavlja le tehničnega postopka, temveč pravo umetnost povezovanja materialov v trdno, funkcionalno in trajno celoto.</p>
+            <p>Vsak projekt obravnavamo individualno in s celovitim razumevanjem potreb naših naročnikov. Naše storitve temeljijo na naprednih tehnologijah in inovativnih postopkih, s katerimi zagotavljamo kakovost, zanesljivost in dolgotrajne rešitve.</p>
+            <p>Zavedamo se, da sodobno industrijsko okolje zahteva visoko prilagodljivost, hitro odzivnost in predvsem natančno izvedbo. Zato v ospredje postavljamo strokovnost, odgovornost ter nenehno vlagamo v razvoj znanja in usposabljanje zaposlenih.</p>
+          </div>
+          <h4 id="naslov_zakaj_mi">Zakaj izbrati prav nas?</h4>
+          <p>✅ Visoka kakovost: Vse naše storitve izvajamo po najvišjih standardih kakovosti. Vsaka izvedba je plod natančnega načrtovanja in skrbne izvedbe.</p>
+          <p>✅ Inovativnost: Redno spremljamo razvoj tehnologij in uvajamo sodobne rešitve, s katerimi našim strankam omogočamo konkurenčno prednost.</p>
+          <p>✅ Odgovornost in natančnost: K vsakemu projektu pristopamo z odgovornostjo, saj razumemo pomen varnosti, trajnosti in brezhibne izvedbe.</p>            
+          <p>✅ Prilagodljivost: Naše ekipe se hitro prilagodijo zahtevam in specifičnim razmeram na terenu. Delujemo znotraj različnih industrijskih okolij brez prekinitev obstoječih procesov.</p>  
+          <p>✅ Zanesljiv poslovni partner: Zaupanje naročnikov nam veliko pomeni. Gradimo dolgoročna sodelovanja, ki temeljijo na transparentnosti, spoštovanju in medsebojnem razumevanju.</p>            
+            
+                      
+            
+        </div>
+
+        <div class="onas1">
+          <div class="accordion">
+            <div class="accordion-item active" data-image="slike/certifikati.png">
+              <div class="accordion-header">
+                <h3>Naši certifikati </h3>
+                <button class="toggle-btn">+</button>
+              </div>
+              <div class="accordion-content">
+                <p>do sedaj smo za naše delo dobili kar 5 certifikatov.</p>
+                <p><b>ISO 9001</b></p>
+                <p><b>ISO 14001</b></p>
+                <p><b>ISO 45001</b></p>
+                <p><b>ISO 3834</b></p>
+                <p><b>EN 1090</b></p>
+              </div>
+            </div>
+          
+            <div class="accordion-item" data-image="slike/storitve_o_nas.jpg">
+              <div class="accordion-header">
+                <h3>Storitve ki jih nudimo</h3>
+                <button class="toggle-btn">+</button>
+              </div>
+              <div class="accordion-content">
+                <p>Pred vsem smo strokovnaki za izdelavo SKID sistemov, posod pod visokim tlakom, platform in podestov ter spremljajoče opreme iz nerjavečega jekla (inox) za farmacevtsko, biofarmacevtsko, kemijsko in živilsko industrijo.</p>
+                <br>
+                <p><b>Poleg tega pa se ukvarjamo tudi z: </b></p>
+                <p>Izdelavo procesnih sistemov,</p>
+                <p>orbitalnim varjenjem,</p>
+                <p>proizvodnjo in montažo,</p>
+                <p>poliranjem in brušenjem,</p>
+                <p>varjenjem cevovodov,</p>
+                <p>varjenjem TIG ter</p>
+                <p>vzdrževanjem.</p>
+              </div>
+            </div>
+          
+            <div class="accordion-item" data-image="slike/reference.png">
+              <div class="accordion-header">
+                <h3>S kom vse smo sodelovali</h3>
+                <button class="toggle-btn">+</button>
+              </div>
+              <div class="accordion-content">
+                <p>Ponosno lahko rečemo tudi da smo sodelovali že z veliko različnimi znanimi podjetji kot so: </p>
+                <p><b>Phizer, Takeda, Dana, Gsk, Krka, lactalis, Novartis, Lek, Novo Nordisk, Lonza...</b></p>
+              </div>
+            </div>
+          
+            <div class="accordion-item" data-image="slike/onas_btinox.png">
+              <div class="accordion-header">
+                <h3>Naši kontakti</h3>
+                <button class="toggle-btn">+</button>
+              </div>
+              <div class="accordion-content">
+                <a href="tel: 030 123 456"><p>&#9990; 030 123 456</p></a>
+                <a href="mailto: ime.priimek@gmail.com"><p>&#9993; ime.priimek@gmail.com</p></a>
+              </div>
+            </div>
+          </div>
+        
+          <!-- 🔽 Ta slika se spreminja glede na klik -->
+          <div class="slika_btinox">
+            <img id="accordion-image" src="slike/certifikati.png" alt="Slika akordeona" />
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+      <div class="reference">
+          <div class="slider">
+          <div class="slide-track">
+            <div class="slika"><img src="slike/Dana.png" alt="Slika 1"></div>
+            <div class="gsk"><img src="slike/GSK.jpg" alt="Slika 2"></div>
+            <div class="krka" ><img src="slike/KRKA.jpg" alt="Slika 3"></div>
+            <div class="Lactalis"><img src="slike/Lactalis.png" alt="Slika 4"></div>
+            <div class="lek"><img src="slike/lek.png" alt="Slika 5"></div>
+            <div class="novartis"><img src="slike/novartis.jpg" alt="Slika 1"></div>
+            <div class="slika"><img src="slike/Pfizer.png" alt="Slika 2"></div>
+            <div class="takeda"><img src="slike/Takeda.png" alt="Slika 3"></div>
+            <div class="slika"><img src="slike/Dana.png" alt="Slika 1"></div>
+            <div class="gsk"><img src="slike/GSK.jpg" alt="Slika 2"></div>
+            <div class="krka"><img src="slike/KRKA.jpg" alt="Slika 3"></div>
+            <div class="Lactalis"><img src="slike/Lactalis.png" alt="Slika 4"></div>
+            <div class="lek"><img src="slike/lek.png" alt="Slika 5"></div>
+            <div class="novartis"><img src="slike/novartis.jpg" alt="Slika 1"></div>
+            <div class="slika"><img src="slike/Pfizer.png" alt="Slika 2"></div>
+            <div class="takeda"><img src="slike/Takeda.png" alt="Slika 3"></div>
+            <div class="slika"><img src="slike/Dana.png" alt="Slika 1"></div>
+            <div class="gsk"><img src="slike/GSK.jpg" alt="Slika 2"></div>
+            <div class="krka"><img src="slike/KRKA.jpg" alt="Slika 3"></div>
+            <div class="Lactalis"><img src="slike/Lactalis.png" alt="Slika 4"></div>
+            <div class="lek"><img src="slike/lek.png" alt="Slika 5"></div>
+            <div class="novartis"><img src="slike/novartis.jpg" alt="Slika 1"></div>
+            <div class="slika"><img src="slike/Pfizer.png" alt="Slika 2"></div>
+            <div class="takeda"><img src="slike/Takeda.png" alt="Slika 3"></div>
+            <div class="slika"><img src="slike/Dana.png" alt="Slika 1"></div>
+            <div class="gsk"><img src="slike/GSK.jpg" alt="Slika 2"></div>
+            <div class="krka"><img src="slike/KRKA.jpg" alt="Slika 3"></div>
+            <div class="Lactalis"><img src="slike/Lactalis.png" alt="Slika 4"></div>
+            <div class="lek"><img src="slike/lek.png" alt="Slika 5"></div>
+            <div class="novartis"><img src="slike/novartis.jpg" alt="Slika 1"></div>
+            <div class="slika"><img src="slike/Pfizer.png" alt="Slika 2"></div>
+            <div class="takeda"><img src="slike/Takeda.png" alt="Slika 3"></div>
+            <div class="slika"><img src="slike/Dana.png" alt="Slika 1"></div>
+            <div class="gsk"><img src="slike/GSK.jpg" alt="Slika 2"></div>
+            <div class="krka"><img src="slike/KRKA.jpg" alt="Slika 3"></div>
+            <div class="Lactalis"><img src="slike/Lactalis.png" alt="Slika 4"></div>
+            <div class="lek"><img src="slike/lek.png" alt="Slika 5"></div>
+            <div class="novartis"><img src="slike/novartis.jpg" alt="Slika 1"></div>
+            <div class="slika"><img src="slike/Pfizer.png" alt="Slika 2"></div>
+            <div class="takeda"><img src="slike/Takeda.png" alt="Slika 3"></div>
+            <div class="slika"><img src="slike/Dana.png" alt="Slika 1"></div>
+            <div class="gsk"><img src="slike/GSK.jpg" alt="Slika 2"></div>
+            <div class="krka"><img src="slike/KRKA.jpg" alt="Slika 3"></div>
+            <div class="Lactalis"><img src="slike/Lactalis.png" alt="Slika 4"></div>
+            <div class="lek"><img src="slike/lek.png" alt="Slika 5"></div>
+            <div class="novartis"><img src="slike/novartis.jpg" alt="Slika 1"></div>
+            <div class="slika"><img src="slike/Pfizer.png" alt="Slika 2"></div>
+            <div class="takeda"><img src="slike/Takeda.png" alt="Slika 3"></div>
+            <div class="slika"><img src="slike/Dana.png" alt="Slika 1"></div>
+            <div class="gsk"><img src="slike/GSK.jpg" alt="Slika 2"></div>
+            <div class="krka"><img src="slike/KRKA.jpg" alt="Slika 3"></div>
+            <div class="Lactalis"><img src="slike/Lactalis.png" alt="Slika 4"></div>
+            <div class="lek"><img src="slike/lek.png" alt="Slika 5"></div>
+            <div class="novartis"><img src="slike/novartis.jpg" alt="Slika 1"></div>
+            <div class="slika"><img src="slike/Pfizer.png" alt="Slika 2"></div>
+            <div class="takeda"><img src="slike/Takeda.png" alt="Slika 3"></div>
+            <div class="slika"><img src="slike/Dana.png" alt="Slika 1"></div>
+            <div class="gsk"><img src="slike/GSK.jpg" alt="Slika 2"></div>
+            <div class="krka"><img src="slike/KRKA.jpg" alt="Slika 3"></div>
+            <div class="Lactalis"><img src="slike/Lactalis.png" alt="Slika 4"></div>
+            <div class="lek"><img src="slike/lek.png" alt="Slika 5"></div>
+            <div class="novartis"><img src="slike/novartis.jpg" alt="Slika 1"></div>
+            <div class="slika"><img src="slike/Pfizer.png" alt="Slika 2"></div>
+            <div class="takeda"><img src="slike/Takeda.png" alt="Slika 3"></div>
+            <div class="slika"><img src="slike/Dana.png" alt="Slika 1"></div>
+            <div class="gsk"><img src="slike/GSK.jpg" alt="Slika 2"></div>
+            <div class="krka"><img src="slike/KRKA.jpg" alt="Slika 3"></div>
+            <div class="Lactalis"><img src="slike/Lactalis.png" alt="Slika 4"></div>
+            <div class="lek"><img src="slike/lek.png" alt="Slika 5"></div>
+            <div class="novartis"><img src="slike/novartis.jpg" alt="Slika 1"></div>
+            <div class="slika"><img src="slike/Pfizer.png" alt="Slika 2"></div>
+            <div class="takeda"><img src="slike/Takeda.png" alt="Slika 3"></div>
+            <div class="slika"><img src="slike/Dana.png" alt="Slika 1"></div>
+            <div class="gsk"><img src="slike/GSK.jpg" alt="Slika 2"></div>
+            <div class="krka"><img src="slike/KRKA.jpg" alt="Slika 3"></div>
+            <div class="Lactalis"><img src="slike/Lactalis.png" alt="Slika 4"></div>
+            <div class="lek"><img src="slike/lek.png" alt="Slika 5"></div>
+            <div class="novartis"><img src="slike/novartis.jpg" alt="Slika 1"></div>
+            <div class="slika"><img src="slike/Pfizer.png" alt="Slika 2"></div>
+            <div class="takeda"><img src="slike/Takeda.png" alt="Slika 3"></div>
+            <div class="slika"><img src="slike/Dana.png" alt="Slika 1"></div>
+            <div class="gsk"><img src="slike/GSK.jpg" alt="Slika 2"></div>
+            <div class="krka"><img src="slike/KRKA.jpg" alt="Slika 3"></div>
+            <div class="Lactalis"><img src="slike/Lactalis.png" alt="Slika 4"></div>
+            <div class="lek"><img src="slike/lek.png" alt="Slika 5"></div>
+            <div class="novartis"><img src="slike/novartis.jpg" alt="Slika 1"></div>
+            <div class="slika"><img src="slike/Pfizer.png" alt="Slika 2"></div>
+            <div class="takeda"><img src="slike/Takeda.png" alt="Slika 3"></div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--<div class="zanesljivi">
+        <div class="text">
+          <h1>ZANESLJIVOST</h1>
+          <p>Pri našem delu je zanesljivost temeljno vodilo. Vsak projekt izpeljemo natančno, odgovorno in pravočasno. Z dolgoletnimi izkušnjami in predanostjo kakovosti zagotavljamo stabilnega in zaupanja vrednega partnerja v kovinskopredelovalni industriji.</p>
+        </div>
+
+      </div>-->
+
+
+
+
+      
+
+
+
+
+
+
+
+      
+    </main>
+
+    
+    <hr class="footer_devider">
+
+
+    <footer>
+      <div class="kontakt_noga" id="kontakt_noga">
+        <div class="naslov"><h1>Kontakt</h1></div>
+        <div class="celo_ime"><p>BT INOX d.o.o.</p></div>
+        <div class="lokacija"><p>Kidričeva cesta 6, Litija, 1270 Litija</p></div>
+        <div class="telefon"><a href="tel:030 123 456"><p>030 123 456</p></a></div>
+        <div class="mail"><a href="mailto:ime.priimek@gmail.com"><p>ime.priimek@gmail.com</p></a></div>
+      </div>
+      <div class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d148545.69280014193!2d14.557959042957675!3d46.087323286071914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47653db322bc5b03%3A0x28f8882ec36da2a1!2sBT%20INOX%20monta%C5%BEa%20procesnih%20sistemov%20Besim%20Tursi%C4%87%20s.p.!5e1!3m2!1sen!2ssi!4v1754076176958!5m2!1sen!2ssi" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+
+    </footer>
+
+
+
+
+
+
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
