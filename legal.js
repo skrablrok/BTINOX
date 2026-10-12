@@ -12,6 +12,13 @@ function toggleMenu() {
 menuIcon.addEventListener('click', toggleMenu);
 overlay.addEventListener('click', toggleMenu);
 
+// Zapri meni ob kliku na povezavo
+sidebar.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (sidebar.classList.contains('active')) toggleMenu();
+  });
+});
+
 // Vrednost opcije je ista pravna stran v izbranem jeziku
 function redirectLanguage(select) {
   window.location.href = select.value;

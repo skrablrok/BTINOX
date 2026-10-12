@@ -11,6 +11,13 @@ function toggleMenu() {
 menuIcon.addEventListener('click', toggleMenu);
 overlay.addEventListener('click', toggleMenu);
 
+// Zapri meni ob kliku na povezavo (npr. #o-nas na isti strani, kjer se stran ne naloži znova)
+sidebar.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    if (sidebar.classList.contains('active')) toggleMenu();
+  });
+});
+
 
 
 
