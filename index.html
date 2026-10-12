@@ -4,8 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
-    <title>BTINOX – nerjaveče jeklo za industrijo | Procesni sistemi</title>
+    <title>Inox procesna oprema in SKID sistemi | BTINOX</title>
     <meta name="description" content="BTINOX izdeluje kovinsko opremo iz nerjavečega jekla za farmacevtsko, biofarmacevtsko in živilsko industrijo. Kakovost, higiena in zanesljivost.">
+    <link rel="canonical" href="https://btinox.si/">
+    <link rel="alternate" hreflang="sl" href="https://btinox.si/">
+    <link rel="alternate" hreflang="en" href="https://btinox.si/index-eng.html">
+    <link rel="alternate" hreflang="de" href="https://btinox.si/index-de.html">
+    <link rel="alternate" hreflang="x-default" href="https://btinox.si/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="BTINOX">
+    <meta property="og:title" content="Inox procesna oprema in SKID sistemi | BTINOX">
+    <meta property="og:description" content="BTINOX izdeluje kovinsko opremo iz nerjavečega jekla za farmacevtsko, biofarmacevtsko in živilsko industrijo. Kakovost, higiena in zanesljivost.">
+    <meta property="og:url" content="https://btinox.si/">
+    <meta property="og:image" content="https://btinox.si/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="sl_SI">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://btinox.si/#organization",
+          "name": "BTINOX",
+          "legalName": "BT INOX d.o.o.",
+          "url": "https://btinox.si/",
+          "logo": "https://btinox.si/logo/logo.png",
+          "image": "https://btinox.si/og-image.jpg",
+          "description": "BT INOX d.o.o. iz Litije izdeluje in montira procesno opremo iz nerjavečega jekla (inox) – SKID sisteme, tlačne posode, procesne posode, platforme in cevne napeljave – za farmacevtsko, biofarmacevtsko, kemijsko in prehrambeno industrijo.",
+          "email": "info@btinox.si",
+          "telephone": "+386 30 391 432",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Kidričeva cesta 6",
+            "addressLocality": "Litija",
+            "postalCode": "1270",
+            "addressCountry": "SI"
+          },
+          "location": [
+            {
+              "@type": "Place",
+              "name": "Sedež podjetja",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Kidričeva cesta 6",
+                "addressLocality": "Litija",
+                "postalCode": "1270",
+                "addressCountry": "SI"
+              }
+            },
+            {
+              "@type": "Place",
+              "name": "Proizvodna hala",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Šmartinska cesta 32",
+                "addressLocality": "Ljubljana",
+                "postalCode": "1000",
+                "addressCountry": "SI"
+              }
+            }
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "email": "info@btinox.si",
+            "telephone": "+386 30 391 432",
+            "availableLanguage": [
+              "sl",
+              "en",
+              "de"
+            ]
+          },
+          "areaServed": "Europe",
+          "knowsAbout": [
+            "SKID sistemi",
+            "nerjaveče jeklo",
+            "GMP",
+            "ISO 9001",
+            "ISO 14001",
+            "ISO 45001",
+            "ISO 3834",
+            "EN 1090"
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/company/btinox"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://btinox.si/#website",
+          "url": "https://btinox.si/",
+          "name": "BTINOX",
+          "inLanguage": "sl",
+          "publisher": {
+            "@id": "https://btinox.si/#organization"
+          }
+        }
+      ]
+    }
+    </script>
     <meta name="keywords" content="BTINOX, nerjaveče jeklo, inox, procesni sistemi, kovinska oprema, SKID sistemi, varjenje inox, farmacevtska industrija, biofarmacevtska industrija, živilska industrija">
     <meta name="author" content="Rok Škrabl">
 
@@ -16,9 +116,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.min.js"></script>
 
-
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="logo/logo.png" sizes="32x32">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cookies.css">
 </head>
 <body>
 
@@ -47,7 +147,7 @@
 
         <div class="glava">
             <div class="logo" id="logo">
-                <a href="index.html"><img id="menjava_logotip" src="logo/logo_white.png" alt="Logo" /></a>
+                <a href="index.html"><img id="menjava_logotip" src="logo/logo_white.png" alt="BTINOX logotip" /></a>
             </div>
             <div class="desna_glava">
                 <select class="language-select" onchange="redirectLanguage(this)">
@@ -101,21 +201,21 @@
 
         <div class="hero-slide"  style="background-image: url(index/farmacija.jpg)"">
           <div class="hero-content">
-            <h1 class="kemijska_industrija">farmacevtska industrija</h1>
+            <h2 class="kemijska_industrija">farmacevtska industrija</h2>
             <p class="kemijska_industrija_opis">Precizna kovinska oprema iz nerjavečega jekla za varne, čiste in zanesljive farmacevtske procese.</p>
           </div>
         </div>
       
         <div class="hero-slide" style="background-image: url(index/biofarmacija.jpg)">
           <div class="hero-content">
-            <h1>biofarmacevtska industrija</h1>
+            <h2>biofarmacevtska industrija</h2>
             <p>Visokokakovostni nerjaveči sistemi za občutljive in zahtevne biofarmacevtske procese.</p>
           </div>
         </div>
       
         <div class="hero-slide" style="background-image: url(index/prehrambena_industrija.jpg)">
           <div class="hero-content">
-            <h1>prehrambena industrija</h1>
+            <h2>prehrambena industrija</h2>
             <p>Higienska kovinska oprema za varno, učinkovito in trajnostno proizvodnjo hrane.</p>
           </div>
         </div>
@@ -165,7 +265,7 @@
 
       <div class="slika_vmes">
         <div class="kocka"></div>
-        <div class="text"><h1 id="panoge">GOSPODARSKE PANOGE</h1></div>
+        <div class="text"><h2 id="panoge">GOSPODARSKE PANOGE</h2></div>
         <div class="kocka2"></div>
       </div>
 
@@ -203,7 +303,7 @@
           <span class="storitev-title">Izdelava procesnih sistemov</span>
           <span class="storitev-toggle">+</span>
           <div class="storitev-description">
-            <p>Smo strokovnjaki za izdelavo SKID sistemov, posod pod visokim tlakom, platform in podestov ter spremljajoče opreme iz nerjavečega jekla (inox) za farmacevtsko, biofarmacevtsko, kemijsko in živiljsko industrijo</p>
+            <p>Smo strokovnjaki za izdelavo SKID sistemov, posod pod visokim tlakom, platform in podestov ter spremljajoče opreme iz nerjavečega jekla (inox) za farmacevtsko, biofarmacevtsko, kemijsko in živilsko industrijo</p>
           </div>
         </div>
       
@@ -330,7 +430,7 @@
                 <button class="toggle-btn">+</button>
               </div>
               <div class="accordion-content">
-                <p>Pred vsem smo strokovnaki za izdelavo SKID sistemov, posod pod visokim tlakom, platform in podestov ter spremljajoče opreme iz nerjavečega jekla (inox) za farmacevtsko, biofarmacevtsko, kemijsko in živilsko industrijo.</p>
+                <p>Predvsem smo strokovnjaki za izdelavo SKID sistemov, posod pod visokim tlakom, platform in podestov ter spremljajoče opreme iz nerjavečega jekla (inox) za farmacevtsko, biofarmacevtsko, kemijsko in živilsko industrijo.</p>
                 <br>
                 <p><b>Poleg tega pa se ukvarjamo tudi z: </b></p>
                 <p>Izdelavo procesnih sistemov,</p>
@@ -379,6 +479,7 @@
                       <label for="question">Vaše vprašanje:</label><br>
                       <textarea id="question" name="question" rows="5" required style="width: 100%; padding: 8px; margin-bottom: 10px;"></textarea><br>
 
+                      <p class="form-privacy" style="font-size: 12px; color: #525252; margin-bottom: 10px;">Z oddajo obrazca se strinjate z obdelavo osebnih podatkov v skladu s <a href="politika-zasebnosti.html">politiko zasebnosti</a>.</p>
                       <button type="submit" style="padding: 10px 20px; background-color: #333; color: white; border: none; cursor: pointer;">
                         Pošlji
                       </button>
@@ -442,118 +543,118 @@
       <div class="reference">
           <div class="slider">
           <div class="slide-track">
-            <div class="slika"><img src="logo/Dana.png" alt="Slika 1"></div>
-            <div class="gsk"><img src="logo/GSK.jpg" alt="Slika 2"></div>
-            <div class="krka" ><img src="logo/KRKA.jpg" alt="Slika 3"></div>
-            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Slika 4"></div>
-            <div class="lek"><img src="logo/lek.png" alt="Slika 5"></div>
-            <div class="novartis"><img src="logo/novartis.jpg" alt="Slika 1"></div>
-            <div class="slika"><img src="logo/Pfizer.png" alt="Slika 2"></div>
-            <div class="takeda"><img src="logo/Takeda.png" alt="Slika 3"></div>
-            <div class="slika"><img src="logo/Dana.png" alt="Slika 1"></div>
-            <div class="gsk"><img src="logo/GSK.jpg" alt="Slika 2"></div>
-            <div class="krka" ><img src="logo/KRKA.jpg" alt="Slika 3"></div>
-            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Slika 4"></div>
-            <div class="lek"><img src="logo/lek.png" alt="Slika 5"></div>
-            <div class="novartis"><img src="logo/novartis.jpg" alt="Slika 1"></div>
-            <div class="slika"><img src="logo/Pfizer.png" alt="Slika 2"></div>
-            <div class="takeda"><img src="logo/Takeda.png" alt="Slika 3"></div>
-            <div class="slika"><img src="logo/Dana.png" alt="Slika 1"></div>
-            <div class="gsk"><img src="logo/GSK.jpg" alt="Slika 2"></div>
-            <div class="krka" ><img src="logo/KRKA.jpg" alt="Slika 3"></div>
-            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Slika 4"></div>
-            <div class="lek"><img src="logo/lek.png" alt="Slika 5"></div>
-            <div class="novartis"><img src="logo/novartis.jpg" alt="Slika 1"></div>
-            <div class="slika"><img src="logo/Pfizer.png" alt="Slika 2"></div>
-            <div class="takeda"><img src="logo/Takeda.png" alt="Slika 3"></div>
-            <div class="slika"><img src="logo/Dana.png" alt="Slika 1"></div>
-            <div class="gsk"><img src="logo/GSK.jpg" alt="Slika 2"></div>
-            <div class="krka" ><img src="logo/KRKA.jpg" alt="Slika 3"></div>
-            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Slika 4"></div>
-            <div class="lek"><img src="logo/lek.png" alt="Slika 5"></div>
-            <div class="novartis"><img src="logo/novartis.jpg" alt="Slika 1"></div>
-            <div class="slika"><img src="logo/Pfizer.png" alt="Slika 2"></div>
-            <div class="takeda"><img src="logo/Takeda.png" alt="Slika 3"></div>
-            <div class="slika"><img src="logo/Dana.png" alt="Slika 1"></div>
-            <div class="gsk"><img src="logo/GSK.jpg" alt="Slika 2"></div>
-            <div class="krka" ><img src="logo/KRKA.jpg" alt="Slika 3"></div>
-            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Slika 4"></div>
-            <div class="lek"><img src="logo/lek.png" alt="Slika 5"></div>
-            <div class="novartis"><img src="logo/novartis.jpg" alt="Slika 1"></div>
-            <div class="slika"><img src="logo/Pfizer.png" alt="Slika 2"></div>
-            <div class="takeda"><img src="logo/Takeda.png" alt="Slika 3"></div>
-            <div class="slika"><img src="logo/Dana.png" alt="Slika 1"></div>
-            <div class="gsk"><img src="logo/GSK.jpg" alt="Slika 2"></div>
-            <div class="krka" ><img src="logo/KRKA.jpg" alt="Slika 3"></div>
-            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Slika 4"></div>
-            <div class="lek"><img src="logo/lek.png" alt="Slika 5"></div>
-            <div class="novartis"><img src="logo/novartis.jpg" alt="Slika 1"></div>
-            <div class="slika"><img src="logo/Pfizer.png" alt="Slika 2"></div>
-            <div class="takeda"><img src="logo/Takeda.png" alt="Slika 3"></div>
-            <div class="slika"><img src="logo/Dana.png" alt="Slika 1"></div>
-            <div class="gsk"><img src="logo/GSK.jpg" alt="Slika 2"></div>
-            <div class="krka" ><img src="logo/KRKA.jpg" alt="Slika 3"></div>
-            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Slika 4"></div>
-            <div class="lek"><img src="logo/lek.png" alt="Slika 5"></div>
-            <div class="novartis"><img src="logo/novartis.jpg" alt="Slika 1"></div>
-            <div class="slika"><img src="logo/Pfizer.png" alt="Slika 2"></div>
-            <div class="takeda"><img src="logo/Takeda.png" alt="Slika 3"></div>
-            <div class="slika"><img src="logo/Dana.png" alt="Slika 1"></div>
-            <div class="gsk"><img src="logo/GSK.jpg" alt="Slika 2"></div>
-            <div class="krka" ><img src="logo/KRKA.jpg" alt="Slika 3"></div>
-            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Slika 4"></div>
-            <div class="lek"><img src="logo/lek.png" alt="Slika 5"></div>
-            <div class="novartis"><img src="logo/novartis.jpg" alt="Slika 1"></div>
-            <div class="slika"><img src="logo/Pfizer.png" alt="Slika 2"></div>
-            <div class="takeda"><img src="logo/Takeda.png" alt="Slika 3"></div>
-            <div class="slika"><img src="logo/Dana.png" alt="Slika 1"></div>
-            <div class="gsk"><img src="logo/GSK.jpg" alt="Slika 2"></div>
-            <div class="krka" ><img src="logo/KRKA.jpg" alt="Slika 3"></div>
-            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Slika 4"></div>
-            <div class="lek"><img src="logo/lek.png" alt="Slika 5"></div>
-            <div class="novartis"><img src="logo/novartis.jpg" alt="Slika 1"></div>
-            <div class="slika"><img src="logo/Pfizer.png" alt="Slika 2"></div>
-            <div class="takeda"><img src="logo/Takeda.png" alt="Slika 3"></div>
-            <div class="slika"><img src="logo/Dana.png" alt="Slika 1"></div>
-            <div class="gsk"><img src="logo/GSK.jpg" alt="Slika 2"></div>
-            <div class="krka" ><img src="logo/KRKA.jpg" alt="Slika 3"></div>
-            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Slika 4"></div>
-            <div class="lek"><img src="logo/lek.png" alt="Slika 5"></div>
-            <div class="novartis"><img src="logo/novartis.jpg" alt="Slika 1"></div>
-            <div class="slika"><img src="logo/Pfizer.png" alt="Slika 2"></div>
-            <div class="takeda"><img src="logo/Takeda.png" alt="Slika 3"></div>
-            <div class="slika"><img src="logo/Dana.png" alt="Slika 1"></div>
-            <div class="gsk"><img src="logo/GSK.jpg" alt="Slika 2"></div>
-            <div class="krka" ><img src="logo/KRKA.jpg" alt="Slika 3"></div>
-            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Slika 4"></div>
-            <div class="lek"><img src="logo/lek.png" alt="Slika 5"></div>
-            <div class="novartis"><img src="logo/novartis.jpg" alt="Slika 1"></div>
-            <div class="slika"><img src="logo/Pfizer.png" alt="Slika 2"></div>
-            <div class="takeda"><img src="logo/Takeda.png" alt="Slika 3"></div>
-            <div class="slika"><img src="logo/Dana.png" alt="Slika 1"></div>
-            <div class="gsk"><img src="logo/GSK.jpg" alt="Slika 2"></div>
-            <div class="krka" ><img src="logo/KRKA.jpg" alt="Slika 3"></div>
-            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Slika 4"></div>
-            <div class="lek"><img src="logo/lek.png" alt="Slika 5"></div>
-            <div class="novartis"><img src="logo/novartis.jpg" alt="Slika 1"></div>
-            <div class="slika"><img src="logo/Pfizer.png" alt="Slika 2"></div>
-            <div class="takeda"><img src="logo/Takeda.png" alt="Slika 3"></div>
-            <div class="slika"><img src="logo/Dana.png" alt="Slika 1"></div>
-            <div class="gsk"><img src="logo/GSK.jpg" alt="Slika 2"></div>
-            <div class="krka" ><img src="logo/KRKA.jpg" alt="Slika 3"></div>
-            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Slika 4"></div>
-            <div class="lek"><img src="logo/lek.png" alt="Slika 5"></div>
-            <div class="novartis"><img src="logo/novartis.jpg" alt="Slika 1"></div>
-            <div class="slika"><img src="logo/Pfizer.png" alt="Slika 2"></div>
-            <div class="takeda"><img src="logo/Takeda.png" alt="Slika 3"></div>
-            <div class="slika"><img src="logo/Dana.png" alt="Slika 1"></div>
-            <div class="gsk"><img src="logo/GSK.jpg" alt="Slika 2"></div>
-            <div class="krka" ><img src="logo/KRKA.jpg" alt="Slika 3"></div>
-            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Slika 4"></div>
-            <div class="lek"><img src="logo/lek.png" alt="Slika 5"></div>
-            <div class="novartis"><img src="logo/novartis.jpg" alt="Slika 1"></div>
-            <div class="slika"><img src="logo/Pfizer.png" alt="Slika 2"></div>
-            <div class="takeda"><img src="logo/Takeda.png" alt="Slika 3"></div>
+            <div class="slika"><img src="logo/Dana.png" alt="Logotip Dana"></div>
+            <div class="gsk"><img src="logo/GSK.jpg" alt="Logotip GSK"></div>
+            <div class="krka" ><img src="logo/KRKA.jpg" alt="Logotip Krka"></div>
+            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Logotip Lactalis"></div>
+            <div class="lek"><img src="logo/lek.png" alt="Logotip Lek"></div>
+            <div class="novartis"><img src="logo/novartis.jpg" alt="Logotip Novartis"></div>
+            <div class="slika"><img src="logo/Pfizer.png" alt="Logotip Pfizer"></div>
+            <div class="takeda"><img src="logo/Takeda.png" alt="Logotip Takeda"></div>
+            <div class="slika"><img src="logo/Dana.png" alt="Logotip Dana"></div>
+            <div class="gsk"><img src="logo/GSK.jpg" alt="Logotip GSK"></div>
+            <div class="krka" ><img src="logo/KRKA.jpg" alt="Logotip Krka"></div>
+            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Logotip Lactalis"></div>
+            <div class="lek"><img src="logo/lek.png" alt="Logotip Lek"></div>
+            <div class="novartis"><img src="logo/novartis.jpg" alt="Logotip Novartis"></div>
+            <div class="slika"><img src="logo/Pfizer.png" alt="Logotip Pfizer"></div>
+            <div class="takeda"><img src="logo/Takeda.png" alt="Logotip Takeda"></div>
+            <div class="slika"><img src="logo/Dana.png" alt="Logotip Dana"></div>
+            <div class="gsk"><img src="logo/GSK.jpg" alt="Logotip GSK"></div>
+            <div class="krka" ><img src="logo/KRKA.jpg" alt="Logotip Krka"></div>
+            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Logotip Lactalis"></div>
+            <div class="lek"><img src="logo/lek.png" alt="Logotip Lek"></div>
+            <div class="novartis"><img src="logo/novartis.jpg" alt="Logotip Novartis"></div>
+            <div class="slika"><img src="logo/Pfizer.png" alt="Logotip Pfizer"></div>
+            <div class="takeda"><img src="logo/Takeda.png" alt="Logotip Takeda"></div>
+            <div class="slika"><img src="logo/Dana.png" alt="Logotip Dana"></div>
+            <div class="gsk"><img src="logo/GSK.jpg" alt="Logotip GSK"></div>
+            <div class="krka" ><img src="logo/KRKA.jpg" alt="Logotip Krka"></div>
+            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Logotip Lactalis"></div>
+            <div class="lek"><img src="logo/lek.png" alt="Logotip Lek"></div>
+            <div class="novartis"><img src="logo/novartis.jpg" alt="Logotip Novartis"></div>
+            <div class="slika"><img src="logo/Pfizer.png" alt="Logotip Pfizer"></div>
+            <div class="takeda"><img src="logo/Takeda.png" alt="Logotip Takeda"></div>
+            <div class="slika"><img src="logo/Dana.png" alt="Logotip Dana"></div>
+            <div class="gsk"><img src="logo/GSK.jpg" alt="Logotip GSK"></div>
+            <div class="krka" ><img src="logo/KRKA.jpg" alt="Logotip Krka"></div>
+            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Logotip Lactalis"></div>
+            <div class="lek"><img src="logo/lek.png" alt="Logotip Lek"></div>
+            <div class="novartis"><img src="logo/novartis.jpg" alt="Logotip Novartis"></div>
+            <div class="slika"><img src="logo/Pfizer.png" alt="Logotip Pfizer"></div>
+            <div class="takeda"><img src="logo/Takeda.png" alt="Logotip Takeda"></div>
+            <div class="slika"><img src="logo/Dana.png" alt="Logotip Dana"></div>
+            <div class="gsk"><img src="logo/GSK.jpg" alt="Logotip GSK"></div>
+            <div class="krka" ><img src="logo/KRKA.jpg" alt="Logotip Krka"></div>
+            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Logotip Lactalis"></div>
+            <div class="lek"><img src="logo/lek.png" alt="Logotip Lek"></div>
+            <div class="novartis"><img src="logo/novartis.jpg" alt="Logotip Novartis"></div>
+            <div class="slika"><img src="logo/Pfizer.png" alt="Logotip Pfizer"></div>
+            <div class="takeda"><img src="logo/Takeda.png" alt="Logotip Takeda"></div>
+            <div class="slika"><img src="logo/Dana.png" alt="Logotip Dana"></div>
+            <div class="gsk"><img src="logo/GSK.jpg" alt="Logotip GSK"></div>
+            <div class="krka" ><img src="logo/KRKA.jpg" alt="Logotip Krka"></div>
+            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Logotip Lactalis"></div>
+            <div class="lek"><img src="logo/lek.png" alt="Logotip Lek"></div>
+            <div class="novartis"><img src="logo/novartis.jpg" alt="Logotip Novartis"></div>
+            <div class="slika"><img src="logo/Pfizer.png" alt="Logotip Pfizer"></div>
+            <div class="takeda"><img src="logo/Takeda.png" alt="Logotip Takeda"></div>
+            <div class="slika"><img src="logo/Dana.png" alt="Logotip Dana"></div>
+            <div class="gsk"><img src="logo/GSK.jpg" alt="Logotip GSK"></div>
+            <div class="krka" ><img src="logo/KRKA.jpg" alt="Logotip Krka"></div>
+            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Logotip Lactalis"></div>
+            <div class="lek"><img src="logo/lek.png" alt="Logotip Lek"></div>
+            <div class="novartis"><img src="logo/novartis.jpg" alt="Logotip Novartis"></div>
+            <div class="slika"><img src="logo/Pfizer.png" alt="Logotip Pfizer"></div>
+            <div class="takeda"><img src="logo/Takeda.png" alt="Logotip Takeda"></div>
+            <div class="slika"><img src="logo/Dana.png" alt="Logotip Dana"></div>
+            <div class="gsk"><img src="logo/GSK.jpg" alt="Logotip GSK"></div>
+            <div class="krka" ><img src="logo/KRKA.jpg" alt="Logotip Krka"></div>
+            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Logotip Lactalis"></div>
+            <div class="lek"><img src="logo/lek.png" alt="Logotip Lek"></div>
+            <div class="novartis"><img src="logo/novartis.jpg" alt="Logotip Novartis"></div>
+            <div class="slika"><img src="logo/Pfizer.png" alt="Logotip Pfizer"></div>
+            <div class="takeda"><img src="logo/Takeda.png" alt="Logotip Takeda"></div>
+            <div class="slika"><img src="logo/Dana.png" alt="Logotip Dana"></div>
+            <div class="gsk"><img src="logo/GSK.jpg" alt="Logotip GSK"></div>
+            <div class="krka" ><img src="logo/KRKA.jpg" alt="Logotip Krka"></div>
+            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Logotip Lactalis"></div>
+            <div class="lek"><img src="logo/lek.png" alt="Logotip Lek"></div>
+            <div class="novartis"><img src="logo/novartis.jpg" alt="Logotip Novartis"></div>
+            <div class="slika"><img src="logo/Pfizer.png" alt="Logotip Pfizer"></div>
+            <div class="takeda"><img src="logo/Takeda.png" alt="Logotip Takeda"></div>
+            <div class="slika"><img src="logo/Dana.png" alt="Logotip Dana"></div>
+            <div class="gsk"><img src="logo/GSK.jpg" alt="Logotip GSK"></div>
+            <div class="krka" ><img src="logo/KRKA.jpg" alt="Logotip Krka"></div>
+            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Logotip Lactalis"></div>
+            <div class="lek"><img src="logo/lek.png" alt="Logotip Lek"></div>
+            <div class="novartis"><img src="logo/novartis.jpg" alt="Logotip Novartis"></div>
+            <div class="slika"><img src="logo/Pfizer.png" alt="Logotip Pfizer"></div>
+            <div class="takeda"><img src="logo/Takeda.png" alt="Logotip Takeda"></div>
+            <div class="slika"><img src="logo/Dana.png" alt="Logotip Dana"></div>
+            <div class="gsk"><img src="logo/GSK.jpg" alt="Logotip GSK"></div>
+            <div class="krka" ><img src="logo/KRKA.jpg" alt="Logotip Krka"></div>
+            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Logotip Lactalis"></div>
+            <div class="lek"><img src="logo/lek.png" alt="Logotip Lek"></div>
+            <div class="novartis"><img src="logo/novartis.jpg" alt="Logotip Novartis"></div>
+            <div class="slika"><img src="logo/Pfizer.png" alt="Logotip Pfizer"></div>
+            <div class="takeda"><img src="logo/Takeda.png" alt="Logotip Takeda"></div>
+            <div class="slika"><img src="logo/Dana.png" alt="Logotip Dana"></div>
+            <div class="gsk"><img src="logo/GSK.jpg" alt="Logotip GSK"></div>
+            <div class="krka" ><img src="logo/KRKA.jpg" alt="Logotip Krka"></div>
+            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Logotip Lactalis"></div>
+            <div class="lek"><img src="logo/lek.png" alt="Logotip Lek"></div>
+            <div class="novartis"><img src="logo/novartis.jpg" alt="Logotip Novartis"></div>
+            <div class="slika"><img src="logo/Pfizer.png" alt="Logotip Pfizer"></div>
+            <div class="takeda"><img src="logo/Takeda.png" alt="Logotip Takeda"></div>
+            <div class="slika"><img src="logo/Dana.png" alt="Logotip Dana"></div>
+            <div class="gsk"><img src="logo/GSK.jpg" alt="Logotip GSK"></div>
+            <div class="krka" ><img src="logo/KRKA.jpg" alt="Logotip Krka"></div>
+            <div class="Lactalis"><img src="logo/Lactalis.png" alt="Logotip Lactalis"></div>
+            <div class="lek"><img src="logo/lek.png" alt="Logotip Lek"></div>
+            <div class="novartis"><img src="logo/novartis.jpg" alt="Logotip Novartis"></div>
+            <div class="slika"><img src="logo/Pfizer.png" alt="Logotip Pfizer"></div>
+            <div class="takeda"><img src="logo/Takeda.png" alt="Logotip Takeda"></div>
           </div>
         </div>
       </div>
@@ -562,7 +663,7 @@
 
       <!--<div class="zanesljivi">
         <div class="text">
-          <h1>ZANESLJIVOST</h1>
+          <h2>ZANESLJIVOST</h2>
           <p>Pri našem delu je zanesljivost temeljno vodilo. Vsak projekt izpeljemo natančno, odgovorno in pravočasno. Z dolgoletnimi izkušnjami in predanostjo kakovosti zagotavljamo stabilnega in zaupanja vrednega partnerja v kovinskopredelovalni industriji.</p>
         </div>
 
@@ -588,7 +689,7 @@
 
     <footer>
       <div class="kontakt_noga" id="kontakt_noga">
-        <div class="naslov"><h1>Kontakt</h1></div>
+        <div class="naslov"><h2>Kontakt</h2></div>
         <div class="celo_ime"><p>BT INOX d.o.o.</p></div>
         <div class="lokacija1"><p>Sedež podjetja: Kidričeva cesta 6, 1270 Litija</p></div>
         <div class="lokacija"><p>Proizvodna hala: Šmartinska cesta 32, 1000 Ljubljana</p></div>
@@ -598,7 +699,6 @@
       </div>
       <div id="map" style="height: 35vh; width: 100%; margin-top: 20px;"></div>
 
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMFnWKq5MbJCHuPKQ_yXoKiEZ2fBNZ2gA"></script>
       <script>
         function initMap() {
           // Lokacije (primer)
@@ -614,11 +714,10 @@
           new google.maps.Marker({ position: hala, map: map, title: "Proizvodna hala" });
         }
       
-        window.onload = initMap;
       </script>
 
       <div class="avtorske">
-        <p>© 2025 Vse pravice pridržane | by <a href="https:\\skrablweb.si" target="_blank" >Skrablweb</a> | Pogoji poslovanja</p>
+        <p>© 2025 Vse pravice pridržane | by <a href="https://skrablweb.si/" target="_blank" >Skrablweb</a> | <span class="pravne_povezave"><a href="politika-zasebnosti.html">Politika zasebnosti</a> | <a href="piskotki.html">Piškotki</a> | <a href="pogoji-uporabe.html">Pogoji uporabe</a> | <a href="#nastavitve-piskotkov" onclick="openCookieSettings(event)">Nastavitve piškotkov</a></span></p>
       </div>
     </footer>
 
@@ -633,6 +732,6 @@
 
     <script src="script.js"></script>
     <script src="index.js"></script>
+    <script src="cookies.js"></script>
 </body>
-
 </html>

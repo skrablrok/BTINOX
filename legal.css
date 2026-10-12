@@ -1,0 +1,162 @@
+/* Pravne strani (politika zasebnosti, piškotki, pogoji uporabe) + stran 404 */
+.pravno {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(120px, 14vw, 200px) 16px 64px;
+  color: #222;
+}
+.pravno h1 {
+  font-size: clamp(28px, 3vw, 44px);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.pravno .posodobljeno {
+  font-size: 14px;
+  color: #6b6b6b;
+  margin-bottom: 32px;
+}
+.pravno .uvod {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+.pravno h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 40px 0 12px;
+}
+.pravno p,
+.pravno li {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+.pravno p + p {
+  margin-top: 12px;
+}
+.pravno ul {
+  padding-left: 20px;
+  margin: 8px 0 12px;
+}
+.pravno li + li {
+  margin-top: 4px;
+}
+.pravno a {
+  color: #0033E7;
+}
+.pravno .naslov-blok {
+  padding: 16px 20px;
+  background: #f2f1f8;
+  border-radius: 8px;
+}
+.pravno .tabela {
+  overflow-x: auto;
+  margin: 12px 0;
+}
+.pravno table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.pravno th,
+.pravno td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 12px;
+  border-bottom: 1px solid #ddd;
+}
+.pravno th {
+  font-weight: 600;
+  background: #f2f1f8;
+}
+.pravno .cc-btn {
+  margin: 8px 0 16px;
+}
+
+/* Glava je na pravnih straneh vedno v »scroll« stanju (ni hero slike) */
+.glava.scroll {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.noga-pravno {
+  padding-bottom: 32px;
+}
+
+/* 404 */
+.napaka {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 16px 64px;
+  background: #f2f1f8;
+}
+.napaka .koda {
+  font-size: clamp(96px, 18vw, 220px);
+  font-weight: 800;
+  line-height: 1;
+  color: #0033E7;
+  letter-spacing: -0.04em;
+}
+.napaka h1 {
+  font-size: clamp(22px, 2.5vw, 36px);
+  font-weight: 700;
+  margin: 16px 0 8px;
+}
+.napaka p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #525252;
+  max-width: 480px;
+}
+.napaka .gumbi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 32px;
+}
+.napaka .gumbi a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color .2s ease, color .2s ease;
+}
+.napaka .gumbi a.glavni {
+  background: #000;
+  color: #fff;
+}
+.napaka .gumbi a:hover {
+  background: #0033E7;
+  border-color: #0033E7;
+  color: #fff;
+}
+.napaka .jeziki {
+  margin-top: 24px;
+  font-size: 14px;
+}
+.napaka .jeziki button {
+  font-family: inherit;
+  font-size: 14px;
+  background: none;
+  border: none;
+  padding: 8px;
+  color: #525252;
+  cursor: pointer;
+}
+.napaka .jeziki button[aria-pressed="true"] {
+  color: #000;
+  font-weight: 600;
+  text-decoration: underline;
+}

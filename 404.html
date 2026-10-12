@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stran ne obstaja | BTINOX</title>
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+    <!-- Absolutne poti: 404 se lahko prikaže na katerem koli URL-ju -->
+    <link rel="icon" type="image/png" href="/logo/logo.png" sizes="32x32">
+    <link rel="stylesheet" href="/legal.css">
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font-family: 'Rubik', sans-serif; background: #f2f1f8; }
+      .napaka-logo { position: absolute; top: 24px; left: 16px; width: clamp(120px, 12vw, 180px); }
+      .napaka-logo img { width: 100%; display: block; }
+      html[lang="sl"] [data-lang]:not([data-lang="sl"]),
+      html[lang="en"] [data-lang]:not([data-lang="en"]),
+      html[lang="de"] [data-lang]:not([data-lang="de"]) { display: none !important; }
+    </style>
+</head>
+<body>
+    <a class="napaka-logo" href="/index.html"><img src="/logo/logo.png" alt="BTINOX"></a>
+
+    <main class="napaka">
+        <div class="koda" aria-hidden="true">404</div>
+
+        <div data-lang="sl">
+            <h1>Te strani ne najdemo</h1>
+            <p>Stran, ki jo iščete, je bila morda premaknjena ali odstranjena, ali pa je naslov napačno vpisan.</p>
+        </div>
+        <div data-lang="en">
+            <h1>We can't find this page</h1>
+            <p>The page you are looking for may have been moved or removed, or the address may be mistyped.</p>
+        </div>
+        <div data-lang="de">
+            <h1>Diese Seite wurde nicht gefunden</h1>
+            <p>Die gesuchte Seite wurde möglicherweise verschoben oder entfernt, oder die Adresse ist falsch geschrieben.</p>
+        </div>
+
+        <div class="gumbi" data-lang="sl">
+            <a class="glavni" href="/index.html">Na domačo stran</a>
+            <a href="/index.html#kontakt_noga">Kontakt</a>
+        </div>
+        <div class="gumbi" data-lang="en">
+            <a class="glavni" href="/index-eng.html">Go to homepage</a>
+            <a href="/index-eng.html#kontakt_noga">Contact</a>
+        </div>
+        <div class="gumbi" data-lang="de">
+            <a class="glavni" href="/index-de.html">Zur Startseite</a>
+            <a href="/index-de.html#kontakt_noga">Kontakt</a>
+        </div>
+
+        <div class="jeziki">
+            <button type="button" data-set="sl" aria-pressed="true">SI</button>
+            <button type="button" data-set="en" aria-pressed="false">EN</button>
+            <button type="button" data-set="de" aria-pressed="false">DE</button>
+        </div>
+    </main>
+
+    <script>
+      (function () {
+        const titles = { sl: 'Stran ne obstaja | BTINOX', en: 'Page not found | BTINOX', de: 'Seite nicht gefunden | BTINOX' };
+        function setLang(l) {
+          document.documentElement.lang = l;
+          document.title = titles[l];
+          document.querySelectorAll('[data-set]').forEach(b => b.setAttribute('aria-pressed', b.dataset.set === l));
+        }
+        // Jezik iz zahtevanega URL-ja (-eng / -de), sicer iz brskalnika
+        const p = location.pathname;
+        const nav = (navigator.language || 'sl').slice(0, 2);
+        setLang(/-de(\.html)?$/.test(p) ? 'de' : /-eng(\.html)?$/.test(p) ? 'en'
+              : nav === 'de' ? 'de' : nav === 'sl' ? 'sl' : 'en');
+        document.querySelectorAll('[data-set]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.set)));
+      })();
+    </script>
+</body>
+</html>

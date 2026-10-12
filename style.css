@@ -420,7 +420,7 @@ body.menu-open .glava {
   will-change: opacity, transform;
 }
 
-.hero-content h1 {
+.hero-content h1, .hero-content h2 {
   font-size: clamp(30px, 7vw, 220px);
   margin-bottom: 1vw;
   font-weight: 700;
@@ -434,14 +434,14 @@ body.menu-open .glava {
 }
 
 .hero-content h1,
-.hero-content p {
+.hero-content p, .hero-content h2 {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .hero-slide.active .hero-content h1,
-.hero-slide.active .hero-content p {
+.hero-slide.active .hero-content p, .hero-slide.active .hero-content h2 {
   opacity: 1;
   transform: translateY(0);
 }
@@ -1577,7 +1577,7 @@ body.menu-open .glava {
 .kontakt_noga .lokacija{
   padding-bottom: 1.5vw;
 }
-.kontakt_noga h1{
+.kontakt_noga h1, .kontakt_noga h2{
   font-size: clamp(24px, 3vw, 120px);
   font-weight: 800;
   padding-bottom: 1vw;

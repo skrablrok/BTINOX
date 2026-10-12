@@ -376,7 +376,7 @@ body.menu-open .glava {
     padding-bottom: 2vw;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
-.naslov_strani h1{
+.naslov_strani h1, .naslov_strani h2{
     font-size: clamp(24px, 2.3vw, 200px);
     font-weight: 900;
     color: #2d2c2c;
@@ -472,7 +472,7 @@ main{
     width: 30%;
     line-height: 1.5;
 }
-.procesne_posode h1, .skid_sistemi h1{
+.procesne_posode h1, .skid_sistemi h1, .procesne_posode h2, .skid_sistemi h2{
     font-weight: 800;
     font-size: clamp(19px, 1.7vw, 200px);
     color: #2d2c2c;
@@ -617,7 +617,7 @@ summary span{
     width: 30%;
     line-height: 1.5;
 }
-.wip-cip-sip h1, .bioreak_refminat h1{
+.wip-cip-sip h1, .bioreak_refminat h1, .wip-cip-sip h2, .bioreak_refminat h2{
     font-weight: 800;
     font-size: clamp(19px, 1.7vw, 200px);
     color: #2d2c2c;
@@ -741,7 +741,7 @@ summary span{
     width: 30%;
     line-height: 1.5;
 }
-.ogrevalni_hladilni_sistemi h1, .gmp_mediji h1{
+.ogrevalni_hladilni_sistemi h1, .gmp_mediji h1, .ogrevalni_hladilni_sistemi h2, .gmp_mediji h2{
     font-weight: 800;
     font-size: clamp(19px, 1.7vw, 200px);
     color: #2d2c2c;
@@ -1090,7 +1090,7 @@ summary span{
     width: fit-content;
     padding-left: 20vw;
 }
-.naslov_partnerji .naslov h1{
+.naslov_partnerji .naslov h1, .naslov_partnerji .naslov h2{
     color: #2d2c2c;
     font-size: clamp(22px, 2vw, 150px);
 }
@@ -1285,7 +1285,7 @@ summary span{
 .kontakt_noga .lokacija{
   padding-bottom: 1.5vw;
 }
-.kontakt_noga h1{
+.kontakt_noga h1, .kontakt_noga h2{
   font-size: clamp(24px, 3vw, 120px);
   font-weight: 800;
   padding-bottom: 1vw;
